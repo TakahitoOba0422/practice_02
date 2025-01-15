@@ -1,0 +1,42 @@
+@use "../foundation/variable" as *;
+@use "../foundation/base" as *;
+
+// 見出し
+.c-sec-ttl {
+  text-align: center;
+  &__txt {
+    font-size: 60px;
+    margin-bottom: -9px;
+    @include mq('md') {
+      font-size: 32px;
+    }
+  }
+  &__ruby {
+    font-size: 22px;
+    @include mq('md') {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+}
+
+// ボタン
+.c-grd-btn {
+  display: inline-block;
+  padding: 23px 105px;
+  background: linear-gradient(90deg, rgba(196,26,127,1) 0%, rgba(102,75,191,1) 100%);
+  border-radius: calc(1px/0);
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 10px 0 $pnk;
+  transition: translate .3s ease, box-shadow .3s ease;
+  cursor: pointer;
+  &:hover {
+    translate: 0 5px;
+    box-shadow: 0 5px 0 $pnk;
+  }
+  @include mq('md') {
+    padding: 12px 58px;
+    font-size: 16px;
+  }
+}

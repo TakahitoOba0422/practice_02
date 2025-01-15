@@ -1,0 +1,10 @@
+@use "../foundation/variable" as *;
+@use "../foundation/base" as *;
+
+.l-footer {
+  text-align: center;
+  padding-block: 70px;
+  @include mq('md') {
+    padding-block: 50px;
+  }
+}

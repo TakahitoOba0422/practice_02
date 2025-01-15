@@ -1,0 +1,23 @@
+// color
+$wht: #fff;
+$bk: #141414;
+$prp: #D136D1;
+$pnk: #DD118E;
+
+// ブレイクポイント
+$breakpoints: (
+    'sm': 'screen and (max-width: 576px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 992px)',
+    'xl': 'screen and (max-width: 1120px)',
+) !default;
+
+// 画像格納ディレクトリ
+$imgDir: '../img/';
+
+// mixin
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;    
+  }
+}

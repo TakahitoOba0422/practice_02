@@ -1,0 +1,46 @@
+// Foundation: base.scss
+@use './variable' as *;
+@import 'normalize.css';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote, pre, code, strong, em, label, dt, dd, cite, small, abbr, kbd, sup, sub {
+  line-height: 1.6;
+}
+html {
+  height: 100%;
+} 
+body {
+  font-size: 16px;
+  color: $wht;
+  background-color: $bk;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  letter-spacing: 0.05em;
+}
+a {
+  text-decoration: none;
+  color: $wht;
+}
+ul,ol {
+  list-style: none;
+}
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none
+}
+:where(button, [type='button'], [type='reset'], [type='submit']) {
+  touch-action: manipulation;
+}
+.all-wrap {
+  overflow-x: clip;
+  position: relative;
+}

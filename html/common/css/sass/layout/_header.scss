@@ -1,0 +1,45 @@
+@use "../foundation/variable" as *;
+@use "../foundation/base" as *;
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  &__inner {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    @include mq('md') {
+      padding-inline: 10px;
+    }
+  }
+  &__logo {
+    &-link {
+      font-size: 28px;
+    }
+  }
+  &__nav {
+    .gnav {
+      &__list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @include mq('md') {
+          gap: 16px;
+          margin-top: 4px;
+        }
+      }
+      &__link {
+        font-weight: bold;
+        @include mq('md') {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
